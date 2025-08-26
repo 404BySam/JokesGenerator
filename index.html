@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,10 +12,26 @@
     </header>
     <section class="containerCard">
       <div class="card">
-        <span id="joke">Click</span>
+        <div class="containerSpan">
+          <span class="txtJoke" id="joke">Click</span>
+        </div>
         <button onclick="getJoke()" class="button">Nouvelle blague</button>
-        <div class="like"></div>
-        <div class="share"></div>
+        <div class="like">
+          <img
+            class="pictureLike"
+            src="./img/ajouter-des-likes.png"
+            alt="picture"
+            height="35px"
+          />
+        </div>
+        <div class="share">
+          <img
+            class="pictureShare"
+            src="./img/partager.png"
+            alt="picture"
+            height="35px"
+          />
+        </div>
         <div class="follow"></div>
       </div>
     </section>
