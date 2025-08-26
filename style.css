@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap");
+
 * {
+  font-family: "Baloo 2", sans-serif;
   margin: 0;
 }
 
@@ -12,10 +15,17 @@ body {
   display: flex;
   justify-content: center;
   color: yellow;
+  font-weight: bold;
 }
 .containerCard {
   display: flex;
   justify-content: center;
+}
+
+#joke {
+  font-size: 2em;
+  font-weight: bold;
+  max-height: 50px;
 }
 
 .card {
@@ -29,10 +39,11 @@ body {
   width: 35%;
 }
 
-.card span {
+.containerSpan {
   font-size: 18px;
   color: #212121;
   grid-area: 2 / 2 / 5 / 5;
+  border: solid 2px #00acc1;
 }
 
 .button {
@@ -44,6 +55,7 @@ body {
   text-decoration: none;
   font-weight: bold;
   cursor: pointer;
+  text-align: center;
 }
 
 .button:hover {
@@ -51,25 +63,35 @@ body {
 }
 
 .like {
-  margin-left: 25px;
+  display: flex;
+  margin-left: 30px;
   grid-area: 5 / 3 / 6 / 4;
-  height: 50px;
-  background-color: black;
-  width: 60px;
+  height: 45px;
+  background-color: yellow;
+  width: 45px;
+  justify-content: center;
+}
+.pictureLike {
+  margin-top: 5px;
 }
 
 .share {
+  display: flex;
+  justify-content: center;
   grid-area: 5 / 4 / 6 / 5;
-  height: 50px;
+  height: 45px;
   background-color: blue;
-  margin-left: 25px;
-  width: 60px;
+  width: 45px;
+  margin-left: 15px;
+}
+
+.pictureShare {
+  margin-top: 5px;
 }
 
 .follow {
   grid-area: 5 / 5 / 6 / 6;
-  height: 50px;
+  height: 45px;
   background-color: blue;
-  margin-left: 25px;
-  width: 60px;
+  width: 45px;
 }
