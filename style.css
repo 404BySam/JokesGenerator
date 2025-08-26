@@ -25,7 +25,10 @@ body {
 #joke {
   font-size: 2em;
   font-weight: bold;
-  max-height: 50px;
+}
+
+.containerSpan {
+  width: 350px;
 }
 
 .card {
@@ -40,10 +43,9 @@ body {
 }
 
 .containerSpan {
-  font-size: 18px;
+  font-size: 15px;
   color: #212121;
   grid-area: 2 / 2 / 5 / 5;
-  border: solid 2px #00acc1;
 }
 
 .button {
@@ -56,6 +58,7 @@ body {
   font-weight: bold;
   cursor: pointer;
   text-align: center;
+  font-size: 1.2em;
 }
 
 .button:hover {
