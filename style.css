@@ -26,8 +26,29 @@ body {
 }
 
 #theme-switch {
-  width: 60px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#theme-switch img {
+  fill: blue;
+}
+
+#theme-switch img:last-child {
+  display: none;
+}
+
+.darkmode #theme-switch img:first-child {
+  display: none;
+}
+
+.darkmode #theme-switch img:last-child {
+  display: block;
 }
 
 .title {
