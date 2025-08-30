@@ -6,6 +6,7 @@
   --color-card: #fffdf9;
   --color-span: #000000;
   --color-button: #ffeb3b;
+  --color-socials: #eceff1;
 }
 
 .darkmode {
@@ -14,6 +15,7 @@
   --color-card: #37474f;
   --color-span: #ffffff;
   --color-button: #f48fb1;
+  --color-socials: #ff9800;
 }
 
 * {
@@ -103,18 +105,19 @@ body {
   cursor: pointer;
   text-align: center;
   font-size: 1.2em;
-}
-
-.button:hover {
   background: var(--color-button);
 }
+
+/* .button:hover {
+  background: var(--color-button);
+} */
 
 .like {
   display: flex;
   margin-left: 30px;
   grid-area: 5 / 5 / 6 / 4;
   height: 45px;
-  background-color: yellow;
+  background-color: var(--color-socials);
   width: 45px;
   justify-content: center;
 }
@@ -127,9 +130,9 @@ body {
   justify-content: center;
   grid-area: 5 / 5 / 6 / 5;
   height: 45px;
-  background-color: #eceff1;
   width: 45px;
   margin-left: 15px;
+  background-color: var(--color-socials);
 }
 
 .pictureShare {
