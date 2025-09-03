@@ -7,6 +7,7 @@
   --color-span: #000000;
   --color-button: #ffeb3b;
   --color-socials: #eceff1;
+  --color-switch: yellow;
 }
 
 .darkmode {
@@ -16,6 +17,7 @@
   --color-span: #ffffff;
   --color-button: #f48fb1;
   --color-socials: #ff9800;
+  --color-switch: #f48fb1;
 }
 
 * {
@@ -28,14 +30,13 @@ body {
 }
 
 #theme-switch {
-  width: 50px;
-  height: 50px;
-  padding: 0;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-
+  background-color: var(--color-switch);
   border-color: var(--base-color);
 }
 
